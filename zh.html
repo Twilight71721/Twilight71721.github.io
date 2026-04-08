@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Yanteng Hu</title>
+<title>胡彦腾</title>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600&family=Noto+Serif+SC:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
   :root{
@@ -69,7 +69,7 @@
 
   .brand{
     font-family:'Cormorant Garamond','Noto Serif SC',serif;
-    font-size:28px;font-weight:600;letter-spacing:.5px;
+    font-size:30px;font-weight:600;letter-spacing:.5px;
     line-height:1.2;margin-bottom:4px;
   }
   .brand em{color:var(--accent);font-style:italic;font-weight:500}
@@ -123,16 +123,12 @@
     border-color:var(--accent);
   }
 
-  /* Hero with photo */
   .hero{
     margin-bottom:64px;padding-bottom:48px;
     border-bottom:1px solid var(--line);
     display:flex;gap:44px;align-items:center;
   }
-  .photo-wrap{
-    flex-shrink:0;position:relative;
-    animation:fadeUp .8s ease backwards;
-  }
+  .photo-wrap{flex-shrink:0;position:relative;animation:fadeUp .8s ease backwards}
   .photo{
     width:180px;height:180px;border-radius:50%;
     object-fit:cover;border:4px solid var(--card);
@@ -294,54 +290,52 @@
   <button class="menu-btn" onclick="document.querySelector('.side').classList.toggle('open')">☰</button>
   <div class="page">
     <aside class="side">
-      <div class="brand">Yanteng Hu<em>.</em></div>
+      <div class="brand">胡彦腾<em>.</em></div>
       <div class="brand-sub">Personal Page</div>
 
-      <div class="nav-title">Navigation</div>
+      <div class="nav-title">导航</div>
       <nav>
         <ul>
-          <li><a href="#home" class="active">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#education">Education</a></li>
-          <li><a href="#courses">Courses</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="#home" class="active">首页</a></li>
+          <li><a href="#about">关于</a></li>
+          <li><a href="#education">教育背景</a></li>
+          <li><a href="#courses">课程</a></li>
+          <li><a href="#projects">项目</a></li>
+          <li><a href="#contact">联系</a></li>
         </ul>
       </nav>
 
-      <div class="nav-title">Elsewhere</div>
+      <div class="nav-title">其他</div>
       <nav>
         <ul>
           <li><a href="https://github.com/Twilight71721" target="_blank">GitHub ↗</a></li>
         </ul>
       </nav>
 
-      <a class="lang-switch" href="zh.html">🌏 中文版本</a>
+      <a class="lang-switch" href="index.html">🌏 English</a>
       <button class="theme-toggle" onclick="toggleTheme()">
-        <span id="theme-icon">🌙</span> <span id="theme-text">Dark Mode</span>
+        <span id="theme-icon">🌙</span> <span id="theme-text">切换到暗色</span>
       </button>
     </aside>
 
     <main>
       <section id="home" class="hero">
         <div class="photo-wrap">
-          <img class="photo" src="https://api.dicebear.com/7.x/initials/svg?seed=YH&backgroundColor=b08968&textColor=ffffff" alt="Yanteng Hu" />
+          <img class="photo" src="https://api.dicebear.com/7.x/initials/svg?seed=YH&backgroundColor=b08968&textColor=ffffff" alt="胡彦腾" />
         </div>
         <div class="hero-text">
-          <div class="hero-label">Welcome</div>
-          <h1>Hi, I'm <em>Yanteng Hu</em></h1>
-          <div class="tagline">A student of computer science, a lover of elegant ideas.</div>
+          <div class="hero-label">欢迎</div>
+          <h1>你好，我是 <em>胡彦腾</em></h1>
+          <div class="tagline">一名计算机系的学生，一个热爱优雅想法的人。</div>
         </div>
       </section>
 
       <section id="about">
-        <h2>About</h2>
-        <div class="section-sub">Who I Am</div>
-        <p>I am an undergraduate student at <strong>Kuang Yaming Honors School, Nanjing University</strong>,
-          majoring in Computer Science. I am fascinated by operating systems, compilers, and programming language theory,
-          and I enjoy exploring how abstract ideas can be turned into concrete, running code.</p>
-        <p>I believe in learning by doing — only the code you have written yourself truly belongs to you.
-          This page is where I keep track of what I am learning and building.</p>
+        <h2>关于我</h2>
+        <div class="section-sub">About Me</div>
+        <p>我是 <strong>南京大学匡亚明学院</strong> 的本科生，主修计算机科学方向。
+          对操作系统、编译器与程序语言理论充满好奇，喜欢把抽象的想法写成可运行的代码。</p>
+        <p>相信动手为王——只有亲手写过的代码才真正属于自己。这里记录我正在学习与构建的一切。</p>
 
         <div class="quote">
           The best way to predict the future is to invent it.
@@ -350,82 +344,82 @@
       </section>
 
       <section id="education">
-        <h2>Education</h2>
-        <div class="section-sub">Academic Background</div>
+        <h2>教育背景</h2>
+        <div class="section-sub">Education</div>
         <ul class="timeline">
           <li>
-            <div class="title">Nanjing University</div>
-            <div class="desc">Kuang Yaming Honors School · B.S. in Computer Science</div>
-            <span class="meta">2023 — Present</span>
+            <div class="title">南京大学</div>
+            <div class="desc">匡亚明学院 · 计算机科学方向 · 本科在读</div>
+            <span class="meta">2023 — 至今</span>
           </li>
         </ul>
       </section>
 
       <section id="courses">
-        <h2>Courses</h2>
+        <h2>课程</h2>
         <div class="section-sub">Selected Coursework</div>
-        <p>A chronological record of my course work, including lecture notes, lab reports and reflections.</p>
+        <p>按学期整理的课程学习记录，包含讲义批注、实验报告与思考。</p>
         <ul class="timeline">
           <li>
-            <div class="title">Operating Systems</div>
-            <div class="desc">PA / M labs and xv6 source code reading</div>
-            <span class="meta">2026 Spring</span>
+            <div class="title">操作系统</div>
+            <div class="desc">PA / M 系列实验与 xv6 源码阅读</div>
+            <span class="meta">2026 春</span>
           </li>
           <li>
-            <div class="title">Principles of Compilers</div>
-            <div class="desc">From lexical analysis to code generation</div>
-            <span class="meta">2025 Fall</span>
+            <div class="title">编译原理</div>
+            <div class="desc">从词法分析到代码生成的完整实现</div>
+            <span class="meta">2025 秋</span>
           </li>
           <li>
-            <div class="title">Introduction to Computer Systems</div>
-            <div class="desc">PA0 — PA4, a deep dive into how computers work</div>
-            <span class="meta">2025 Spring</span>
+            <div class="title">计算机系统基础</div>
+            <div class="desc">PA0 — PA4 完整通关，深入理解计算机</div>
+            <span class="meta">2025 春</span>
           </li>
           <li>
-            <div class="title">Data Structures and Algorithms</div>
-            <div class="desc">Classic problems, proofs and complexity analysis</div>
-            <span class="meta">2024 Fall</span>
+            <div class="title">数据结构与算法</div>
+            <div class="desc">经典题型、算法证明与复杂度分析</div>
+            <span class="meta">2024 秋</span>
           </li>
           <li>
-            <div class="title">Discrete Mathematics</div>
-            <div class="desc">Logic, set theory, algebraic structures and graph theory</div>
-            <span class="meta">2024 Spring</span>
+            <div class="title">离散数学</div>
+            <div class="desc">逻辑、集合论、代数结构与图论</div>
+            <span class="meta">2024 春</span>
           </li>
         </ul>
       </section>
 
       <section id="projects">
-        <h2>Projects</h2>
-        <div class="section-sub">Selected Works</div>
-        <p>A few things I have built along the way.</p>
+        <h2>项目</h2>
+        <div class="section-sub">Selected Projects</div>
+        <p>一些还算拿得出手的小玩意。</p>
         <div class="grid">
           <a class="card" href="#">
             <h4>nemu-riscv</h4>
-            <p>A full-system RISC-V emulator built on the PA framework, capable of running Linux.</p>
+            <p>基于 PA 框架实现的 RISC-V 全系统模拟器，可运行 Linux。</p>
             <span class="tag">Systems · C</span>
           </a>
           <a class="card" href="#">
             <h4>toy-compiler</h4>
-            <p>A compiler from a C subset to LLVM IR, complete with several optimization passes.</p>
+            <p>C 子集到 LLVM IR 的完整编译器，含多个优化 Pass。</p>
             <span class="tag">Compiler · C++</span>
           </a>
           <a class="card" href="#">
             <h4>selfpage</h4>
-            <p>The page you are looking at — hand-written in plain HTML, CSS and JavaScript.</p>
+            <p>你正在看的这个页面，纯 HTML / CSS / JS 手写而成。</p>
             <span class="tag">Web · Design</span>
           </a>
           <a class="card" href="#">
             <h4>dotfiles</h4>
-            <p>My Neovim / tmux / zsh configuration and a collection of everyday scripts.</p>
+            <p>我的 Neovim / tmux / zsh 配置与日常脚本集合。</p>
             <span class="tag">Tools · Shell</span>
           </a>
         </div>
       </section>
 
       <section id="contact">
-        <h2>Contact</h2>
+        <h2>联系我</h2>
         <div class="section-sub">Get in Touch</div>
-        <p>Feel free to reach out by email or through GitHub — I would love to chat about tech, books, or anything interesting.</p>
+        <p>欢迎通过邮件或 GitHub 与我交流，聊聊技术、书，或者任何有趣的事情。</p>
         <div class="socials">
           <a class="social" href="mailto:241240038@smail.nju.edu.cn">
             <svg viewBox="0 0 24 24"><path d="M4 4h16v16H4z"/><path d="M4 4l8 8 8-8"/></svg>
@@ -439,7 +433,7 @@
       </section>
 
       <footer>
-        &copy; 2026 Yanteng Hu &nbsp;·&nbsp; Crafted with <span class="heart">❤</span> at Nanjing University
+        &copy; 2026 胡彦腾 &nbsp;·&nbsp; Crafted with <span class="heart">❤</span> at Nanjing University
       </footer>
     </main>
   </div>
@@ -451,7 +445,7 @@
   function updateThemeBtn(){
     const dark = document.documentElement.getAttribute('data-theme') === 'dark';
     document.getElementById('theme-icon').textContent = dark ? '☀' : '🌙';
-    document.getElementById('theme-text').textContent = dark ? 'Light Mode' : 'Dark Mode';
+    document.getElementById('theme-text').textContent = dark ? '切换到亮色' : '切换到暗色';
   }
   function toggleTheme(){
     const cur = document.documentElement.getAttribute('data-theme');
